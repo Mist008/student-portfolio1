@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #eaeaea, #f3f4f6);
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+header {
+    background: linear-gradient(135deg, #4a90e2, #5c6bc0);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Example hover color */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4a90e2;
+}
+
+button {
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5c6bc0; /* Darker shade on hover */
+}
+
+/* Image styles */
+section img {
+    width: 100%; /* Full width for responsiveness */
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack vertically */
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px; /* Adjust padding */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust for smaller screens */
+    }
+}
